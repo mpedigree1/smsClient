@@ -12,11 +12,11 @@ The tool allows you to configure multiple environments like below.
 
 configuration:
   
-  environment:
-    production: ""
-    staging: ""
-    localMachine: ""
-    qaMachine: ""
+      environment:
+        production: ""
+        staging: ""
+        localMachine: ""
+        qaMachine: ""
     
     
 Use

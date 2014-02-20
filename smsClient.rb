@@ -5,7 +5,7 @@ config = Configuration.new
 
 if ARGV.size == 1
   if config.environment_exists? ARGV.first
-    RestClient.post config.get_environment_url(ARGV.first) , {:From => config.number, :Body => config.message}    
+  	RestClient.post config.environment_url(ARGV.first) , {:From => config.number, :Body => config.message}
   else
     puts "Settings don't exist for environment #{ARGV.first}"
   end

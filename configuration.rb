@@ -11,7 +11,7 @@ class Configuration
     @configuration["environment"].has_key? environment
   end
 
-  def get_environment_url(environment)
+  def environment_url(environment)
     @configuration["environment"][environment]
   end
 
